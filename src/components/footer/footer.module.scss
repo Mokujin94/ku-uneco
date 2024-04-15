@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+.footer {
+    width: 100%;
+    background: $ku-grey-element;
+    padding: 30px 0;
+    margin-top: auto;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        max-width: 295px;
+        justify-content: space-between;
+        gap: 20px;
+        &__block {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        &__link {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            a {
+                color: $ku-black-text;
+            }
+        }
+    }
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &__item {
+            a {
+                color: $ku-black-text;
+                transition: 0.3s;
+                &:hover {
+                    color: $ku-orange-text;
+                }
+            }
+        }
+    }
+}

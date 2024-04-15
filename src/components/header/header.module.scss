@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background: $ku-white-element;
+    z-index: 4;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    &__item {
+        &__link {
+            color: $ku-black-text;
+            transition: 0.3s;
+            &:hover {
+                color: $ku-default-hover;
+            }
+            &__active {  // Правильный селектор для элемента <a> внутри активного .menu__item
+                color: $ku-orange-text;
+            }
+        }
+
+    }
+}

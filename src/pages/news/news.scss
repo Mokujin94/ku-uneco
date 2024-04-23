@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+.news {
+    width: 100%;
+    margin-top: 150px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(auto, 340px));
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}

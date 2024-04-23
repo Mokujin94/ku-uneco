@@ -13,6 +13,9 @@
     width: 100%;
     padding: 0 10px;
     margin: 0 auto;
+    &__min {
+        max-width: 800px;
+    }
 }
 
 a {

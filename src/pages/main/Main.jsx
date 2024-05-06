@@ -47,9 +47,7 @@ function Main() {
                     </div>
                 </div>
             </div>
-            <div className="mainPage__form">
-                <Form />
-            </div>
+
             <div className="mainPage__news">
                 <div className="container">
                     <h2 className="title">Курсы и новости</h2>

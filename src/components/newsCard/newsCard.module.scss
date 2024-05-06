@@ -13,11 +13,22 @@
         padding: 10px;
         display: flex;
         flex-direction: column;
-        gap: 10px;
     }
+
+    &__title {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        color: $ku-black-text;
+        word-break: break-all;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
     &__content {
         display: -webkit-box;
-        -webkit-line-clamp: 6;
+        -webkit-line-clamp: 5;
         -webkit-box-orient: vertical;
         overflow: hidden;
         white-space: pre-wrap;
@@ -25,6 +36,7 @@
         font-size: 14px;
         font-weight: 500;
         color: $ku-black-text;
+        margin: 5px 0;
     }
     &__button {
         align-self: flex-end;

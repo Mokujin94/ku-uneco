@@ -1,3 +1,4 @@
+import Form from '../../components/form/Form';
 import './contacts.scss';
 
 const Contacts = () => {
@@ -38,6 +39,9 @@ const Contacts = () => {
                             <span className='contact__wrapper-content-item-descr'>uneco_bigcitylights</span>
                         </div>
                     </div>
+                </div>
+                <div className="mainPage__form">
+                    <Form />
                 </div>
             </div>
         </div>

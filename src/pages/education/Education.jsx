@@ -12,6 +12,7 @@ const Education = () => {
                     <CourseCard />
                     <CourseCard />
                 </div>
+
             </div>
         </div>
     );

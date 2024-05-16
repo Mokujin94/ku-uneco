@@ -1,6 +1,8 @@
 import Form from '../../components/form/Form';
 import './contacts.scss';
 
+import contacts from "../../icons/contacts.png"
+
 const Contacts = () => {
     return (
         <div className='contact'>
@@ -9,16 +11,32 @@ const Contacts = () => {
                 <div className="contact__wrapper">
                     <div className="contact__wrapper-content">
                         <div className="contact__wrapper-content-item">
+                            <span className='contact__wrapper-content-item-title'>Наименование:</span>
+                            <span className='contact__wrapper-content-item-descr'>Учебный центр АО "ОЭК"</span>
+                        </div>
+                        <div className="contact__wrapper-content-item">
                             <span className='contact__wrapper-content-item-title'>Адрес:</span>
-                            <span className='contact__wrapper-content-item-descr'>г. Москва, Раушская набережная, д.8, 115035</span>
+                            <span className='contact__wrapper-content-item-descr'>107078, Москва, ул. Каланчевская, д.11 стр.2</span>
                         </div>
                         <div className="contact__wrapper-content-item">
-                            <span className='contact__wrapper-content-item-title'>Почта:</span>
-                            <span className='contact__wrapper-content-item-descr'>почта@mail.com</span>
+                            <span className='contact__wrapper-content-item-title'>Режим и график работы:</span>
+                            <span className='contact__wrapper-content-item-descr'>Понедельник-пятцина 8:00-17:00</span>
+                            <span className='contact__wrapper-content-item-descr'>Обеденный перерыв 12:00-13:00</span>
+                            <span className='contact__wrapper-content-item-descr'>Выходные дни: суббота, воскресенье</span>
                         </div>
                         <div className="contact__wrapper-content-item">
-                            <span className='contact__wrapper-content-item-title'>Номер:</span>
-                            <span className='contact__wrapper-content-item-descr'>+7 999 995 99-98</span>
+                            <span className='contact__wrapper-content-item-title'>График выдачи удостоверений:</span>
+                            <span className='contact__wrapper-content-item-descr'>Вторник</span>
+                            <span className='contact__wrapper-content-item-descr'>Четверг 8:00-17:00</span>
+                            <span className='contact__wrapper-content-item-descr'>Обеденный перерыв 12:00-13:00</span>
+                        </div>
+                        <div className="contact__wrapper-content-item">
+                            <span className='contact__wrapper-content-item-title'>Адрес электронной почты:</span>
+                            <span className='contact__wrapper-content-item-descr'>KU@uneco.ru</span>
+                        </div>
+                        <div className="contact__wrapper-content-item">
+                            <span className='contact__wrapper-content-item-title'>Дата создания:</span>
+                            <span className='contact__wrapper-content-item-descr'>2010 год</span>
                         </div>
                     </div>
                     <div className="contact__wrapper-content">
@@ -38,6 +56,8 @@ const Contacts = () => {
                             </div>
                             <span className='contact__wrapper-content-item-descr'>uneco_bigcitylights</span>
                         </div>
+
+                        <img className='contact__img' src={contacts} alt="" />
                     </div>
                 </div>
                 <div className="mainPage__form">

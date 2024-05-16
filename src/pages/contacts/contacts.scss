@@ -6,7 +6,7 @@
 
     &__wrapper {
         display: flex;
-        max-width: 640px;
+        max-width: 1200px;
         width: 100%;
         justify-content: space-between;
         gap: 20px;
@@ -49,5 +49,9 @@
                 }
             }
         }
+    }
+
+    &__img {
+        width: 620px;
     }
 }

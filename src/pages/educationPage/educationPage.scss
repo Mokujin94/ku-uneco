@@ -1,0 +1,109 @@
+@import '../../styles/variables.scss';
+
+
+.educationPage {
+    padding-top: 74px;
+
+    &__header {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            gap: 40px;
+            h1 {
+                font-weight: 700;
+            }
+        }
+
+        &__btn {
+            max-width: 370px;
+            width: 100%;
+            height: 80px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: $ku-white-text;
+            font-weight: 700;
+            background: $ku-orange-element;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            transition: 0.3s;
+            &:hover {
+                background: $ku-orange-element-hover;
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        gap: 30px;
+
+        &__elementsColumn {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            &__item {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+    }
+
+    &_gap {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__content {
+        background-color: $ku-grey-element;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+
+        &__header {
+            width: 100%;
+            padding: 40px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+            
+        }
+    }
+}

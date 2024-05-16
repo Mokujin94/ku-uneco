@@ -1,6 +1,7 @@
 import About from "./pages/about/About";
 import Contacts from "./pages/contacts/Contacts";
 import Education from "./pages/education/Education";
+import EducationPage from "./pages/educationPage/EducationPage";
 import Main from "./pages/main/Main";
 import News from "./pages/news/News";
 import Schedule from "./pages/schedule/Schedule";
@@ -30,6 +31,10 @@ export const publicRoutes = [
     {
         path: EDUCATIONAL_ROUTE,
         Component: <Education />
+    },
+    {
+        path: EDUCATIONAL_ROUTE + '/:id',
+        Component: <EducationPage />
     },
     {
         path: NEWS_ROUTE,

@@ -12,12 +12,24 @@
     font-size: 24px;
     font-weight: 600;
     color: $ku-black-text;
+
+    &_white {
+        color: $ku-white-text;
+    }
 }
 
 .description {
     color: $ku-black-text;
     font-size: 20px;
     font-weight: 500;
+
+    &_white {
+        color: $ku-white-text;
+    }
+
+    &_bold {
+        font-weight: 700;
+    }
 }
 
 .subtitle {

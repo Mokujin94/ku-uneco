@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+
+.docs {
+    margin: 120px 0 40px 0;
+    width: 100%;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(auto, 150px));
+        justify-content: space-between;
+        gap: 20px;
+    }
+}

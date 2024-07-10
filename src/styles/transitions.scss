@@ -1,0 +1,25 @@
+/* Начальное состояние элемента при входе */
+.fade-enter {
+    opacity: 0;
+    transform: scale(0.99);
+  }
+  
+  /* Состояние элемента при активной анимации входа */
+  .fade-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  /* Начальное состояние элемента при выходе */
+  .fade-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* Состояние элемента при активной анимации выхода */
+  .fade-exit-active {
+    opacity: 0;
+    transform: scale(0.99);
+    transition: opacity 300ms, transform 300ms;
+  }

@@ -3,17 +3,19 @@ import AppRouter from "./components/AppRouter";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import { AuthProvider } from "./store/AuthStore";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
-  return (
-    <div className="content">
-      <AuthProvider>
-        <Header/>
-        <AppRouter/>
-        <Footer/>
-      </AuthProvider>
-    </div>
-  );
+    return (
+        <div className="content">
+            <ScrollToTop />
+            <AuthProvider>
+                <Header />
+                <AppRouter />
+                <Footer />
+            </AuthProvider>
+        </div>
+    );
 };
 
 export default App;
